@@ -1,21 +1,46 @@
-MIT License
 
-Copyright (c) 2023 Onkar Sagare
+# Employee Management System in Python (Tkinter Frontend & MySQL Backend)
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+**Frontend**: Tkinter based frontend.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+**MySQL Integration**: Integrated MySQL as the database backend.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+## Features
+
+- **Add an Employee:** Easily add new employees to your database with this function. Input their details, and the system will store them in the database.
+
+- **Delete an Employee:** Select the employee to delete, and with a click of a button, it will remove the employee details from the database.
+
+- **Update an Employee:** Make changes to their information/details and save the updated data.
+
+- **View All Employees**: Fetch all employees from the database in a single click.
+
+## Screenshots
+
+<img width="1347" height="795" alt="home_screeen" src="https://github.com/user-attachments/assets/6162c43a-e872-49b6-9dfd-b2b9d30627cb" />
+
+
+
+## Setup
+- Fork this repo
+- Clone repo
+```sh
+git clone https://github.com/OnkarSagare27/employee-management-mysql.git
+```
+- Configure stuff in ``config.json``
+```json
+{
+    "pass": "DATABASE PASSWORD",
+    "user": "root",
+    "host": "localhost",
+    "database": "employees"
+}
+```
+- Install requirements
+```sh
+pip install -r requirements.txt
+```
+- Run ``main.py``
+```sh
+python main.py
+```
